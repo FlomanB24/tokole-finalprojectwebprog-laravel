@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Product;
 use App\Models\Store;
+use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class StoreController extends Controller
 {
@@ -90,7 +91,7 @@ class StoreController extends Controller
             'nama_seller' => 'required|min:5|max:100',
             'no_telp' => 'required|min:11|max:12',
             'alamat' => 'required|min:10|max:100',
-            'jam_buka' => 'required|min:8|max:8',
+            'jam_buka' => 'required|min:8|max:15',
             'deskripsi_store' => 'required|min:10|max:200',
             'image' => 'required|image|file|max:1024',
         ]);

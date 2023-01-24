@@ -18,7 +18,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item text-dark "><a href="/admin-view-product" class="t-decor">All Product</a></li>
                 <li class="breadcrumb-item active" aria-current="page">View Product</li>
-                <li class="breadcrumb-item active" aria-current="page">Update Product</li>
+                <li class="breadcrumb-item active" aria-current="page">Create Product</li>
             </ol>
         </nav>
     </div>

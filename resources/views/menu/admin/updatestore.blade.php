@@ -5,6 +5,14 @@
 @endsection()
 
 @section('container')
+    @if (session()->has('success'))
+        <div class="alert alert-success alertwidth" role="alert">
+            <div class="d-inline mes-l">
+                <strong>{{ session('success') }}</strong>
+            </div>
+            <button type="button" class="btn-close ms" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <div class="col-md-12 mb-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">

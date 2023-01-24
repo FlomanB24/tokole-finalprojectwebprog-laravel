@@ -5,6 +5,13 @@
 @endsection()
 
 @section('container')
+    @if (session()->has('deleted'))
+        <div class="alert alert-success alertwidth" role="alert">
+            <div class="d-inline mes-r">
+                <strong>{{ session('deleted') }}</strong>
+            </div>
+        </div>
+    @endif
     <div class="col-md-12 mb-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -59,7 +66,7 @@
                             <a href={{ route('update-store', ['id' => $store->id]) }}>
                                 <i class="bi bi-pencil-square  me-2"></i>
                             </a>
-                            <form action="{{ route('delete', ['id' => $store->id]) }}">
+                            <form action="{{ route('delete-store', ['id' => $store->id]) }}">
                                 @csrf
                                 @method('delete')
                                 <button type="submit" onclick="return confirm('Are you sure this store?')"><i

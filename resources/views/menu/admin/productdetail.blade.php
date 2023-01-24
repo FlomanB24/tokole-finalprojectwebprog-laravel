@@ -10,6 +10,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item text-dark"><a href="/admin-view-product" class="t-decor">All Products</a></li>
                 <li class="breadcrumb-item active" aria-current="page">View Products</li>
+                <li class="breadcrumb-item active" aria-current="page">View Products Details</li>
             </ol>
         </nav>
     </div>

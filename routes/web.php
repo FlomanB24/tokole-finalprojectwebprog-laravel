@@ -40,7 +40,7 @@ Route::middleware('checklogin', 'checkrole')->group(function () {
     Route::get('/admin-view-product', [ProductController::class, 'admin_view_product'])->name('view_product');
     Route::get('/admin-view-store', [StoreController::class, 'admin_view_store'])->name('view_store');
     Route::get('/admin-store-detail/{id}', [StoreController::class, 'admin_store_detail'])->name('store_detail');
-    Route::get('/delete-store/{id}', [StoreController::class, 'delete'])->name('delete');
+    Route::get('/delete-store/{id}', [StoreController::class, 'delete'])->name('delete-store');
 
     Route::get('/admin-create-product', [ProductController::class, 'create_product']);
     Route::post('/admin-add-product', [ProductController::class, 'add_product'])->name('add_product');
