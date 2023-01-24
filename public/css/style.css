@@ -1,0 +1,183 @@
+.navbar,
+.jumbotron {
+    background-color: pink;
+}
+
+.m-nav,
+.m-font {
+    margin-left: 42vh;
+}
+
+.width-container {
+    width: 90%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.margin-footer {
+    margin-left: 56vh;
+}
+
+.m-row {
+    margin-left: 2vh;
+}
+
+.m-row2 {
+    margin-left: 7vh;
+}
+
+.m-image {
+    margin-left: 40vh;
+}
+
+.w-card {
+    width: 85%;
+    margin-left: 11vh;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*SIDEBAR*/
+body {
+    background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.mb-admin {
+    margin-bottom: 10vh;
+    margin-top: 4vh;
+}
+
+.cf {
+    color: black;
+}
+
+.position-search {
+    /* justify-content: flex-end; */
+    margin-left: 130vh;
+}
+
+.btn-position {
+    margin-left: 130vh;
+}
+
+.width-card {
+    width: 40%;
+    margin-left: 40vh;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+.sign-position {
+    position: relative;
+    margin-left: 24vh;
+}
+
+.bg-color,
+.bg-sidebar {
+    background-color: pink;
+}
+
+.bg-logosidebar{
+    background-color: pink;
+    width: 10%;
+}
+
+.margin-hr{
+    margin-top: 10vh;
+    margin-bottom: -4vh;
+}
+
+.margin-logo{
+    margin-top: 3.5vh;
+}
+
+.card-margin{
+    margin-left: 0%;
+    width: 10%;
+    height: 5%;
+}
+
+.width-input{
+    width: 80%;
+}
+
+.input-margin{
+    margin-left: 20%;
+}
+
+.mg-button{
+    margin-left: 30%;
+}
+
+.margin-remember{
+    margin-left: 40%;
+}
+
+.margin-forgot{
+    margin-left: 2%;
+}
+
+.img-show{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.btn-about{
+    position: relative;
+    margin-left: 55vh;
+}
+
+.alertwidth {
+    width: 35%;
+    position: relative;
+    margin-left: 44vh;
+    margin-bottom: -10vh;
+    text-align: center;
+}
+
+.text-decor{
+    text-decoration: none;
+}
+
