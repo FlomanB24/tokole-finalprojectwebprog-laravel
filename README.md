@@ -16,6 +16,8 @@ Cara Installasi Project
 5. Lalu bukalah terminal dengan "ctrl+shift+~"
 6. Ketikkan "composer update" untuk mendapatkan vendor pada laravel tersebut
 7. Nyalakan XAMPP dan buatlah database baru bernama "tokole"
-8. Lalu pada Terminal VSCode, ketikkan "php artisan migrate:fresh --seed" lalu jalankan.
-9. Lalu pada terminal yang sama ketikkan "php artisan serve" dan klik link yang diberikan.
-10. Website tokole siap digunakan.
+8. Buatlah sebuah file baru di Vscode dan berikan nama ".env", lalu copy paste semua isi pada ".env.example" ke ".env" 
+9. Lalu pada file ".env" gantilah DB_DATABASE pada line 14 dengan nama "Tokole:
+10. Lalu pada Terminal VSCode, ketikkan "php artisan migrate:fresh --seed" lalu jalankan.
+11. Lalu pada terminal yang sama ketikkan "php artisan serve" dan klik link yang diberikan.
+12. Website tokole siap digunakan.
