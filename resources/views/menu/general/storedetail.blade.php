@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="img-show">
-                    <img src="{{ asset('storage/' . $store->image) }}" alt="" class="card-img-top" alt=""
+                    <img src="{{ asset('storage/' . $store->image) }}" alt="" class="card-img-top rounded img-thumbnail" alt=""
                         width="100px" height="150px">
                 </div>
             </div>

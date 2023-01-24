@@ -62,7 +62,7 @@
                                 <form action="{{ route('delete', ['id' => $product->id]) }}">
                                     @csrf
                                     @method('delete')
-                                    <button type="submit" onclick="return confirm('Are you sure this product?')"><i
+                                    <button type="submit" onclick="return confirm('Are you sure delete this product?')"><i
                                             class="bi bi-trash3"></i></button>
                                 </form>
                             </span>

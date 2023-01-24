@@ -19,7 +19,7 @@
         <h1 class="pt-4 text-center">{{ $store->nama_store }}</h1>
     </div>
     <br>
-    <img src={{ asset('storage/' . $store->image) }} alt="food" width="600" class="m-image mb-4">
+    <img src={{ asset('storage/' . $store->image) }} alt="food" width="600" class="m-image mb-4 rounded img-thumbnail">
     <div class="container width-container mb-4">
         <h6>Store Name: {{ $store->nama_store }}</h6>
         <h6>Category: {{ $store->category->category_name }}</h6>

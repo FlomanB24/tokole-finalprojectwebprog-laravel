@@ -69,7 +69,7 @@
                             <form action="{{ route('delete-store', ['id' => $store->id]) }}">
                                 @csrf
                                 @method('delete')
-                                <button type="submit" onclick="return confirm('Are you sure this store?')"><i
+                                <button type="submit" onclick="return confirm('Are you sure delete this store?')"><i
                                         class="bi bi-trash3"></i></button>
                             </form>
                         </span>

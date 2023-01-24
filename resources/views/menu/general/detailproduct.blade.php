@@ -21,7 +21,7 @@
         <h1 class="pt-4 text-center">{{ $product->nama_product }}</h1>
     </div>
     <br>
-    <img src="{{ asset('storage/' . $product->image) }}" alt="" width="600" class="m-image mb-4">
+    <img src="{{ asset('storage/' . $product->image) }}" alt="" width="600" class="m-image mb-4 rounded img-thumbnail">
     <div class="container width-container mb-4">
         <h5>Description Product</h5>
         <p class="text-justify">{{ $product->deskripsi_produk }}</p>
