@@ -9,6 +9,14 @@
 @endsection
 
 @section('container')
+    <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark"><a href="/" class="t-decor">Store</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Detail Store</li>
+            </ol>
+        </nav>
+    </div>
     <div class="container width-container">
 
         <h1 class="text-center pt-4">{{ $store->nama_store }}</h1>
@@ -52,7 +60,6 @@
 
         </div>
     </div>
-
 @endsection
 
 @section('footer')

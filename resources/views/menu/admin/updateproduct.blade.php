@@ -5,7 +5,15 @@
 @endsection()
 
 @section('container')
-    <h5 class="mb-4">My Service > Create services</h5>
+    <div class="col-md-12 mb-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark "><a href="/admin-view-product" class="t-decor">All Product</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Product</li>
+                <li class="breadcrumb-item active" aria-current="page">Update Product</li>
+            </ol>
+        </nav>
+    </div>
     <form action="{{ route('admin-update-product', $product->id) }}" method="post" enctype="multipart/form-data">
         @csrf
         <div>

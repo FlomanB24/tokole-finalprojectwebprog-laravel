@@ -13,7 +13,7 @@
             </div>
         @endif --}}
 
-        <div class="card width-card shadow">
+        <div class="card width-card shadow mg-login">
             <div class="card-body">
                 <h3 class="text-center mb-5 pt-4">Login to Tokolé</h3>
 
@@ -45,13 +45,12 @@
 
                             <div class="form-outline mb-4 input-margin">
                                 <label class="form-label" for="name">Username</label>
-                                <input type="text" id="name" name="name" class="form-control width-input"
+                                <input type="text" id="name" name="name" class="form-control width-input @error('name') is-invalid @enderror"
                                     required />
                             </div>
-
                             <div class="form-outline mb-4 input-margin">
                                 <label class="form-label" for="password">Password</label>
-                                <input type="password" id="password" name="password" class="form-control width-input"
+                                <input type="password" id="password" name="password" class="form-control width-input @error('password') is-invalid @enderror"
                                     required />
                             </div>
                             <div class="row mb-4">
@@ -75,9 +74,6 @@
                             </div> --}}
 
                         </form>
-                        <div class="text-center">
-                            <p>Not a member? <a href="/register">Register</a></p>
-                        </div>
                     </div>
                 </div>
             </div>

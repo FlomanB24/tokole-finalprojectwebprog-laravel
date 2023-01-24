@@ -111,7 +111,12 @@ body {
 
 .sign-position {
     position: relative;
-    margin-left: 24vh;
+    margin-left: 21vh;
+}
+
+.reg-position {
+    position: relative;
+    margin-left: 20vh;
 }
 
 .bg-color,
@@ -181,3 +186,11 @@ body {
     text-decoration: none;
 }
 
+.mg-login{
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.t-decor{
+    text-decoration: none;
+}

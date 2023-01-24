@@ -13,7 +13,14 @@
             <button type="button" class="btn-close ms" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     @endif
-    <h5 class="mb-4">Create Category</h5>
+    <div class="col-md-12 mb-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark "><a href="/admin-category" class="t-decor">All Category</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Create Category</li>
+            </ol>
+        </nav>
+    </div>
     <form action="{{ route('add-category') }}", method="post">
         @csrf
         <div>

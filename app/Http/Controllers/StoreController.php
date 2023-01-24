@@ -13,6 +13,15 @@ class StoreController extends Controller
     {
         $products = Product::latest();
         $stores = Store::latest();
+
+        if (request('search')) {
+            $products = Product::where('nama_product', 'like', '%' . request('search') . '%');
+        }
+
+        if (request('search')) {
+            $stores = Store::where('nama_store', 'like', '%' . request('search') . '%');
+        }
+
         return view('menu.general.about', [
             "title" => "store list",
             "products" => $products->paginate(5)->withQueryString(),
@@ -40,9 +49,20 @@ class StoreController extends Controller
 
     public function admin_view_store()
     {
+        // return view('menu.admin.viewstore', [
+        //     "title" => "list product",
+        //     "stores" => Store::all()
+        // ]);
+
+        $stores = Store::latest();
+
+        if (request('search')) {
+            $stores = Store::where('nama_store', 'like', '%' . request('search') . '%');
+        }
+
         return view('menu.admin.viewstore', [
-            "title" => "list product",
-            "stores" => Store::all()
+            "title" => "store list",
+            "stores" => $stores->paginate(5)->withQueryString(),
         ]);
     }
 

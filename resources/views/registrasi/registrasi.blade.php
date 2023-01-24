@@ -3,7 +3,7 @@
 @section('container')
 
     <body class="bg-color">
-        <div class="card width-card shadow">
+        <div class="card width-card shadow mg-login">
             <div class="card-body">
                 <form action="{{ route('register') }}" method="POST">
                     @csrf
@@ -77,7 +77,7 @@
                                     </div>
                                 @enderror
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block mb-4 sign-position">Register</button>
+                            <button type="submit" class="btn btn-primary btn-block mb-4 reg-position">Register</button>
                 </form>
             </div>
         </div>

@@ -5,6 +5,14 @@
 @endsection()
 
 @section('container')
+<div class="col-md-12">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item text-dark"><a href="/admin-category" class="t-decor">All Categories</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View Category</li>
+        </ol>
+    </nav>
+</div>
     <div class="d-inline">
         <a href="/admin-create-category" type="button" class="btn btn-primary mt-3 mb-5">Create your category</a>
     </div>

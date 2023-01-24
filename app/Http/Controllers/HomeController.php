@@ -47,7 +47,7 @@ class HomeController extends Controller
 
         if (Auth::attempt($credentials) == true) {
             if (Auth::user()->is_admin === 1) {
-                return redirect()->route('insert-store');
+                return redirect()->route('view_product');
             }
         } else {
             return redirect()->route('homepage')->with('failed', 'Email or Password Failed');
@@ -59,15 +59,14 @@ class HomeController extends Controller
         return view('menu.general.about');
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
         Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-        return redirect('/login');
+        return redirect()->route('homepage');
     }
 
-    public function aboutus() {
+    public function aboutus()
+    {
         return view('menu.general.aboutus');
     }
 }

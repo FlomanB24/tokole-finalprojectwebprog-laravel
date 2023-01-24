@@ -5,26 +5,36 @@
 @endsection()
 
 @section('container')
+    <div class="col-md-12 mb-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark t-decor"><a href="/admin-view-store" class="t-decor">All Store</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Store</li>
+            </ol>
+        </nav>
+    </div>
     <div class="d-inline">
-        <form class="d-flex position-search">
-            <input class="form-control me-2" style="width:500px;" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex position-search" action="{{ route('view_store') }}" method="get">
+            <input class="form-control me-2" style="width:500px;" type="search" name="search" placeholder="Search"
+                aria-label="Search">
             <button class="btn btn-outline-success border-danger" type="submit"><i class="bi bi-search"></i></button>
         </form>
-        <a href="/admin-insert-store" type="button" class="btn btn-primary mt-3 mb-5">Create Store</a>
+        <a href="/admin-insert-store" type="button" class="btn btn-primary mt-1 mb-5">Create Store</a>
     </div>
 
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">No</th>
-                <th scope="col">Gambar Toko</th>
-                <th scope="col">Nama Toko</th>
+                <th scope="col" width="150px">Gambar Toko</th>
+                <th scope="col" width="150px">Nama Toko</th>
                 <th scope="col">Category</th>
-                <th scope="col">Nama Seller</th>
+                <th scope="col" width="150px">Nama Seller</th>
                 <th scope="col">No Telpon</th>
                 <th scope="col">Alamat</th>
-                <th scope="col">Jam Buka</th>
+                <th scope="col" width="150px">Jam Buka</th>
                 <th scope="col">Deskripsi Store</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -33,7 +43,7 @@
                     <th scope="row">{{ $loop->iteration }}</th>
 
                     <td><img src="{{ asset('storage/' . $store->image) }}" alt="" class="card-img-top"
-                            alt="" width="100px" height="150px"></td>
+                            alt="" width="100px" height="80px"></td>
                     <td>{{ $store->nama_store }}</th>
                     <td>{{ $store->category->category_name }}</td>
                     <td>{{ $store->nama_seller }}</td>
@@ -61,4 +71,8 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="d-flex justify-content-center">
+        {{ $stores->links() }}
+    </div>
 @endsection

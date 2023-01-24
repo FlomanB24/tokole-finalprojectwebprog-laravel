@@ -5,8 +5,18 @@
 @endsection()
 
 @section('container')
-    <h5 class="mb-4">Create store</h5>
-    <form class="mt-u" action="{{ route('admin-update-store', $store->id) }}" method="POST" enctype="multipart/form-data">
+    <div class="col-md-12 mb-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark "><a href="/admin-view-store" class="t-decor">All Store</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Store</li>
+                <li class="breadcrumb-item active" aria-current="page">Update Store</li>
+            </ol>
+        </nav>
+    </div>
+
+    <form class="mt-u" action="{{ route('admin-update-store', $store->id) }}" method="POST"
+        enctype="multipart/form-data">
         @csrf
         <div>
             <div class="mb-3">

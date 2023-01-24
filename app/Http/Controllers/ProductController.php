@@ -20,9 +20,15 @@ class ProductController extends Controller
 
     public function admin_view_product()
     {
+        $products = Product::latest();
+
+        if (request('search')) {
+            $products = Product::where('nama_product', 'like', '%' . request('search') . '%');
+        }
+
         return view('menu.admin.viewproduct', [
-            "title" => "list product",
-            "products" => Product::all()
+            "title" => "store list",
+            "products" => $products->paginate(10)->withQueryString(),
         ]);
     }
 

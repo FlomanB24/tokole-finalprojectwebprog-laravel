@@ -9,6 +9,14 @@
 @endsection
 
 @section('container')
+    <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark"><a href="/" class="t-decor">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Detail Products</li>
+            </ol>
+        </nav>
+    </div>
     <div class="container width-container">
         <h1 class="pt-4 text-center">{{ $product->nama_product }}</h1>
     </div>
@@ -18,7 +26,7 @@
         <h5>Description Product</h5>
         <p class="text-justify">{{ $product->deskripsi_produk }}</p>
 
-        <h6>Price: {{ $product->harga }}</h6>
+        <h6>Price: Rp. {{ number_format($product->harga) }}</h6>
         <h6>Rating: {{ $product->rating }}</h6>
 
     </div>

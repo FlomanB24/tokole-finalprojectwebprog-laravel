@@ -5,7 +5,14 @@
 @endsection()
 
 @section('container')
-    <h5 class="mb-4">My Service > View product</h5>
+    <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark"><a href="/admin-view-product" class="t-decor">All Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Products</li>
+            </ol>
+        </nav>
+    </div>
 
     <div class="container width-container">
         <h1 class="pt-4 text-center">{{ $product->nama_product }}</h1>
@@ -15,7 +22,7 @@
     <div class="container width-container mb-4">
         <h6>Store Name: {{ $product->store->nama_store }}</h6>
         <h6>Address: {{ $product->store->alamat }}</h6>
-        <h6>Price: {{ $product->harga }}</h6>
+        <h6>Price: Rp. {{ number_format($product->harga) }}</h6>
         <h6>Description Product</h6>
         <p class="text-justify">{{ $product->deskripsi_produk }}</p>
 
