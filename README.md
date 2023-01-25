@@ -21,7 +21,7 @@ Cara Installasi Project
 10. Lalu pada Terminal VSCode, ketikkan "php artisan migrate:fresh --seed" lalu jalankan.
 11. Lalu pada terminal yang sama ketikkan "php artisan serve" dan klik link yang diberikan.
 12. Website tokole siap digunakan.
-13. Untuk masuk ke dalam dashboard admin, gunakan Username: Admintokole Password: Admintokole
+13. Untuk masuk ke dalam dashboard admin, gunakan Username: Admintokole | Password: Admintokole
 14. Oleh karena user sebagai admin hanya diperuntukan oleh user yang dipilih tokole maka tidak ada menu registrasi yang disertakan dalam tampilan UI nya untuk mencegah semua orang (bukan pilihan Tokole) dapat melakukan registrasi dan menjadi admin sehingga bisa mengakses dashboard admin. Tetapi utuk pihak Tokole yangmau melakukan registrasi dapat dilakukan secara manual dengan memasang route (/register) saat php artisan serve dijalankan dan web Tokole terbuka.
 
 
