@@ -32,6 +32,7 @@ Route::get('/store/{id}', [StoreController::class, 'store']);
 Route::get('/store-detail/{id}', [StoreController::class, 'storeDetail']);
 Route::get('/', [StoreController::class, 'showAllStore'])->name('homepage');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus');
 
 
 

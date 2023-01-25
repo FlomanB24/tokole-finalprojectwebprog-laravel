@@ -69,4 +69,8 @@ class HomeController extends Controller
     {
         return view('menu.general.aboutus');
     }
+
+    public function contactus(){
+        return view('menu.general.contactform');
+    }
 }

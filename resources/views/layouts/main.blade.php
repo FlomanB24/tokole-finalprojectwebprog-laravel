@@ -50,6 +50,44 @@
     </div>
     @yield('footer')
 
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbz6-YBkyzJcra3WDktoRuopXzJrAHTR8jyYX53uIwSEQldzy9bttvGdxA-Q1NMfvDJe/exec'
+        const form = document.forms['tokole-contact-form']
+
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // ketika tombol submit diklik
+            // tampilkan tombol loading, hilangkan tombol kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then((response) => {
+                    //tampilkan tombol kirim, hilangkan tombol loading
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+
+                    //tampilkan alert
+                    myAlert.classList.toggle('d-none');
+
+                    //reset form
+                    form.reset();
+
+                    console.log('Success!', response);
+                })
+                .catch((error) => console.error('Error!', error.message));
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

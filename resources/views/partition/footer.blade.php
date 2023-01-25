@@ -24,6 +24,14 @@
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
+                <div class="col mt-5">
+                    <h6 class="text-uppercase fw-bold mb-2 ms-4">Contact Us</h6>
+                    <div class="ms-4">
+                        <a href="/contactus" class="me-4 text-reset">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
