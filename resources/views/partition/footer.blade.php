@@ -7,6 +7,7 @@
                 <p><i class="bi bi-geo-alt "></i> Jl. Pancasila no.1, Ciputat,<br> Tangerang Selatan, 1514</p>
                 <p><i class="bi bi-envelope mail"></i> tokole.id@gmail.com</p>
             </div>
+
             <div class="col">
                 <h6 class="text-uppercase fw-bold mb-4 ms-4">Connect with us</h6>
                 <div class="ms-4">
@@ -33,11 +34,11 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         Copyright © 2022
-        <a class="text-reset fw-bold" style="text-decoration:none;">TKL's Group</a>
+        <a class="text-reset fw-bold" style="text-decoration:none;">Bubadibako Group</a>
     </div>
 </footer>

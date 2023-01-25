@@ -8,12 +8,13 @@
     <div class="col-md-12">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item text-dark"><a href="/admin-view-product" class="t-decor">All Products</a></li>
+                <li class="breadcrumb-item text-dark fw-bold"><a href="/admin-view-product" class="t-decor">All Products</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">View Products</li>
             </ol>
         </nav>
     </div>
-    
+
     @if (session()->has('deleted'))
         <div class="alert alert-success alertwidth" role="alert">
             <div class="d-inline mes-r">
@@ -21,6 +22,7 @@
             </div>
         </div>
     @endif
+
     <div class="d-inline">
         <form class="d-flex position-search" action="{{ route('view_product') }}" method="get">
             @csrf
@@ -54,16 +56,16 @@
                         <td>
                             <span class="d-inline-flex">
                                 <a href="{{ route('product_detail', ['id' => $product->id]) }}">
-                                    <i class="bi bi-eye  me-2"></i>
+                                    <i class="bi bi-eye bg-info me-2"></i>
                                 </a>
                                 <a href={{ route('admin-update', ['id' => $product->id]) }}>
-                                    <i class="bi bi-pencil-square  me-2"></i>
+                                    <i class="bi bi-pencil-square  me-2 bg-warning"></i>
                                 </a>
                                 <form action="{{ route('delete', ['id' => $product->id]) }}">
                                     @csrf
                                     @method('delete')
                                     <button type="submit" onclick="return confirm('Are you sure delete this product?')"><i
-                                            class="bi bi-trash3"></i></button>
+                                            class="bi bi-trash3 bg-danger"></i></button>
                                 </form>
                             </span>
                         </td>
@@ -73,7 +75,10 @@
         </table>
     </div>
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center ftmg-bottom2">
         {{ $products->links() }}
     </div>
+@endsection
+@section('footer')
+    @include('partition.footer')
 @endsection

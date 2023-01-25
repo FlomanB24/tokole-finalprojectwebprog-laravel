@@ -12,28 +12,28 @@
     <div class="col-md-12">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item text-dark"><a href="/" class="t-decor">Store</a></li>
+                <li class="breadcrumb-item text-dark fw-bold"><a href="/" class="t-decor">Store</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Detail Store</li>
             </ol>
         </nav>
     </div>
-    <div class="container width-container">
 
+    <div class="container width-container">
         <h1 class="text-center pt-4">{{ $store->nama_store }}</h1>
         <p class="text-center">{{ $store->deskripsi_store }}</p>
-
     </div>
+
     <br>
 
-    <div class="card mb-6">
-
+    <div class="card mb-6 ftmg-bottom2">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mt-4">
                 <div class="img-show">
-                    <img src="{{ asset('storage/' . $store->image) }}" alt="" class="card-img-top rounded img-thumbnail" alt=""
-                        width="100px" height="150px">
+                    <img src="{{ asset('storage/' . $store->image) }}" alt=""
+                        class="card-img-top rounded img-thumbnail" alt="" width="100px" height="150px">
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="card-body ml">
                     <h5 class="card-title">Seller:</h5>
@@ -57,7 +57,6 @@
                     <hr width="180%">
                 </div>
             </div>
-
         </div>
     </div>
 @endsection

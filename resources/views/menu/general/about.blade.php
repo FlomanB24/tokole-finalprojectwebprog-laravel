@@ -9,7 +9,7 @@
 @endsection
 
 @section('container')
-    <div class="container width-container">
+    <div class="container width-container2">
 
         <h1 class="text-center pt-4">About Us</h1>
         <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolorem cupiditate
@@ -24,7 +24,6 @@
         
     </div>
     <br>
-
 
     <div class="card mb-4 w-card  shadow rounded-10">
         @if ($products->count())

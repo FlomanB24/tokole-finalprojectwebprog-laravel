@@ -25,8 +25,6 @@ Route::post('/login-auth', [HomeController::class, 'auth_login'])->name('login')
 Route::get('/register', [HomeController::class, 'register']);
 Route::post('/register', [HomeController::class, 'reg_validate'])->name('register');
 
-// Route::get('/about', [HomeController::class, 'about']);
-
 Route::get('/detail-product/{id}', [ProductController::class, 'productDetail']);
 Route::get('/store/{id}', [StoreController::class, 'store']);
 Route::get('/store-detail/{id}', [StoreController::class, 'storeDetail']);
@@ -38,6 +36,12 @@ Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus'
 
 //ADMIN  DAHSBOARD
 Route::middleware('checklogin', 'checkrole')->group(function () {
+
+    Route::get('/view-profile', [HomeController::class, 'view_profile'])->name('view-profile');
+
+    Route::get('/edit-profile', [HomeController::class, 'edit_profile'])->name('edit-profile');
+    Route::put('/update-profile', [HomeController::class, 'update_profile'])->name('update-profile');
+
     Route::get('/admin-view-product', [ProductController::class, 'admin_view_product'])->name('view_product');
     Route::get('/admin-view-store', [StoreController::class, 'admin_view_store'])->name('view_store');
     Route::get('/admin-store-detail/{id}', [StoreController::class, 'admin_store_detail'])->name('store_detail');
@@ -65,6 +69,9 @@ Route::middleware('checklogin', 'checkrole')->group(function () {
     Route::get('/admin-category', [CategoryController::class, 'admin_view_category']);
     Route::get('/admin/update-category/{id}', [categoryController::class, 'update_category'])->name('update-category');
     Route::post('/admin/update-category/{id}', [categoryController::class, 'admin_update_category'])->name('admin-update-category');
+
+    Route::get('/update-password', [HomeController::class, 'edit_password'])->name('edit-password');
+    Route::post('/update-password', [HomeController::class, 'update_password']);
 
     Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
 });

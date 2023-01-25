@@ -32,7 +32,6 @@ class StoreController extends Controller
 
     public function store($id)
     {
-
         return view('menu.general.store', [
 
             "title" => "store detail",
@@ -50,11 +49,6 @@ class StoreController extends Controller
 
     public function admin_view_store()
     {
-        // return view('menu.admin.viewstore', [
-        //     "title" => "list product",
-        //     "stores" => Store::all()
-        // ]);
-
         $stores = Store::latest();
 
         if (request('search')) {
@@ -74,7 +68,6 @@ class StoreController extends Controller
             "store" => Store::find($id),
         ]);
     }
-
 
     public function admin_insert_store()
     {

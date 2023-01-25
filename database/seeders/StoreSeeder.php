@@ -24,7 +24,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menyediakan berbagai pilihan makanan, minuman dan cemilan untuk buah tangan. Terkenal dengan kue bolu.',
             'jam_buka' => '07.00 - 22.00 WIB',
             'image' => 'images/RumahTalas.jpg',
-            // 'maps' => 'https://goo.gl/maps/xk5KJasj7qyn1m3d6'
         ]);
 
         //Toko 2
@@ -37,7 +36,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menyediakan berbagai jenis kebaya berkualitas',
             'jam_buka' => '09.00 - 16.00 WIB',
             'image' => 'images/TokoKebaya.png',
-            // 'maps' => 'https://maps.app.goo.gl/nNDBrUYEJsSUP48E9?g_st=iw'
         ]);
 
         //Toko 3
@@ -50,7 +48,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menyediakan buah tangan dengan rasa yang khas dan harga yang terjangkau',
             'jam_buka' => '09.00 - 19.00 WIB',
             'image' => 'images/ColetteLola.jpg',
-            // 'maps' => 'https://goo.gl/maps/5oBzwYc5ySWyDf4x6'
         ]);
 
         //Toko 4
@@ -63,7 +60,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menyediakan berbagai hampers untuk oleh oleh khas dari jakarta kualitas premium',
             'jam_buka' => '08.00 - 22.00 WIB',
             'image' => 'images/ClairmontPatisserie.jpg',
-            // 'maps' => 'https://goo.gl/maps/nrPk7nYhh1PsAzRw8'
         ]);
 
         //Toko 5
@@ -76,7 +72,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Galeri batik yang menawarkan batik khas kota hujan Bogor.',
             'jam_buka' => '12.00 - 22.00 WIB',
             'image' => 'images/BatikTradisikuBogor.jpg',
-            // 'maps' => 'https://goo.gl/maps/YU8fHzVEomHW5Xee7'
         ]);
 
         //Toko 6
@@ -89,7 +84,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menjual berbagai roti mini aneka rasa khas Bogor',
             'jam_buka' => '07.00 - 24.00 WIB',
             'image' => 'images/unyil1.jpg',
-            // 'maps' => 'https://maps.app.goo.gl/WGeZ8eZkp7oaYYNs9?g_st=iw'
         ]);
 
         //Toko 7
@@ -102,7 +96,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menyediakan berbagai ole-ole khas Bandung',
             'jam_buka' => '10.00 - 22.00 WIB',
             'image' => 'images/kartikasari.jpg',
-            // 'maps' => 'https://goo.gl/maps/AcNcoPvTNRmXYfi26'
         ]);
 
         //Toko 8
@@ -115,7 +108,6 @@ class StoreSeeder extends Seeder
             'deskripsi_store' => 'Menyediakan berbagai pilihan ole-ole seperti Brownies',
             'jam_buka' => '10.00 - 22.00 WIB',
             'image' => 'images/Amanda.jpg',
-            // 'maps' => 'https://goo.gl/maps/YU8fHzVEomHW5Xee7'
         ]);
     }
 }

@@ -67,7 +67,6 @@ class ProductController extends Controller
         return redirect()->back()->with('success', 'Add product success!');
     }
 
-
     public function update(Request $request)
     {
         $stores = Store::all();
