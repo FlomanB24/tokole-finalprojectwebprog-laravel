@@ -15,7 +15,7 @@ class CategoryController extends Controller
     public function add_category(Request $request)
     {
         $request->validate([
-            'category' => 'required'
+            'category' => 'required|min:3|max:50'
         ]);
 
         Category::create([

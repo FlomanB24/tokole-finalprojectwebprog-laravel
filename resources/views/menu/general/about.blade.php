@@ -26,6 +26,7 @@
     <br>
 
     <div class="card mb-4 w-card  shadow rounded-10">
+        <h6 class="font-homepage">Produk UMKM</h6>
         @if ($products->count())
             <div class="card-body">
                 <div class="row m-row2 text-center">
@@ -50,6 +51,7 @@
     </div>
 
     <div class="card mb-4 w-card shadow rounded-10">
+        <h6 class="font-homepage">Toko UMKM</h6>
         @if ($stores->count())
             <div class="card-body">
                 <div class="row m-row2 text-center">

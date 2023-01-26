@@ -43,7 +43,7 @@
                             <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-kirim">Send</button>
+                        <button type="submit" class="btn btn-primary btn-kirim ps-4 pe-4">Send</button>
 
                         <button class="btn btn-primary btn-loading d-none mb-5 mg-contact" type="button" disabled>
                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>

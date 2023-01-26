@@ -10,8 +10,8 @@
                     <span>
                         <a href="/view-profile" class="text-decor2">
                             <div class="mg-prof">
-                                <h6 class="text-center text-dark">{{ auth()->user()->nameuser }}</h6>
-                                <p class="fw-bold cf text-center">Admin</p>
+                                <h6 class="text-center text-dark fw-bold">{{ auth()->user()->nameuser }}</h6>
+                                <p class="cf text-center">(View Profile)</p>
                             </div>
                         </a>
                     </span>

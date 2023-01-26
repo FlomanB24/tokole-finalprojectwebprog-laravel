@@ -71,9 +71,9 @@
 
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
-                    <textarea type="text" class="form-control @error('deskripsi_product') is-invalid @enderror" id="category"
+                    <textarea type="text" class="form-control @error('deskripsi_produk') is-invalid @enderror" id="category"
                         name="deskripsi_produk" id="description" rows="3" required></textarea>
-                    @error('deskripsi_product')
+                    @error('deskripsi_produk')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>

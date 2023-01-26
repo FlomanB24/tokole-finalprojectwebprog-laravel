@@ -17,7 +17,8 @@
     <div class="col-md-12 mb-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item text-dark fw-bold"><a href="/admin-view-product" class="t-decor">All Product</a></li>
+                <li class="breadcrumb-item text-dark fw-bold"><a href="/admin-view-product" class="t-decor">All Product</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">View Product</li>
                 <li class="breadcrumb-item active" aria-current="page">Update Product</li>
             </ol>
@@ -30,8 +31,9 @@
 
             <div>
                 <div class="mb-3">
-                    <label for="store_name" class="form-label">Store Name</label>
-                    <select class="form-select  @error('store_id') is-invalid @enderror" name="store_id" required>
+                    <label for="store_id" class="form-label">Store Name</label>
+                    <select class="form-select  @error('store_id') is-invalid @enderror" name="store_id" id="store_id"
+                        required>
                         @foreach ($stores as $store)
                             <option @if ($store->id === $product->store->id) selected @endif value="{{ $store->id }}">
                                 {{ $store->nama_store }}
@@ -46,9 +48,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="name" class="form-label">Product Name</label>
+                    <label for="nama_product" class="form-label">Product Name</label>
                     <input type="text" name="nama_product"
-                        class="form-control @error('nama_product') is-invalid @enderror" id="category" id="name"
+                        class="form-control @error('nama_product') is-invalid @enderror" id="nama_product"
                         placeholder="Product name" required value="{{ $product->nama_product }}">
                     @error('nama_product')
                         <div class="invalid-feedback">
@@ -58,9 +60,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="price" class="form-label">Price</label>
+                    <label for="harga" class="form-label">Price</label>
                     <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror"
-                        id="category" id="price" placeholder="Price" required value="{{ $product->harga }}">
+                        id="harga" id="harga" placeholder="Price" required value="{{ $product->harga }}">
                     @error('harga')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -69,10 +71,10 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="description" class="form-label">Description</label>
-                    <textarea type="text" class="form-control @error('deskripsi_product') is-invalid @enderror" id="category"
-                        name="deskripsi_produk" id="description" rows="3" required value="{{ $product->deskripsi_produk }}"></textarea>
-                    @error('deskripsi_product')
+                    <label for="deskripsi_produk" class="form-label">Description</label>
+                    <textarea type="text" class="form-control @error('deskripsi_produk') is-invalid @enderror" id="deskripsi_produk"
+                        name="deskripsi_produk" id="deskripsi_produk" rows="3" required value="{{ $product->deskripsi_produk }}"></textarea>
+                    @error('deskripsi_produk')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>

@@ -51,9 +51,9 @@ class ProductController extends Controller
     {
         $validatedData = $request->validate([
             'store_id' => 'required',
-            'nama_product' => 'required',
-            'harga' => 'required',
-            'deskripsi_produk' => 'required',
+            'nama_product' => 'required|min:5|max:100',
+            'harga' => 'required|numeric|min:1000',
+            'deskripsi_produk' => 'required|min:5|max:200',
             'rating' => 'required',
             'image' => 'required',
         ]);
@@ -64,7 +64,7 @@ class ProductController extends Controller
 
         Product::create($validatedData);
 
-        return redirect()->back()->with('success', 'Add product success!');
+        return redirect()->back()->with('success', 'Add store success!');
     }
 
     public function update(Request $request)
@@ -79,7 +79,7 @@ class ProductController extends Controller
         $request->validate([
             'store_id' => 'required',
             'nama_product' => 'required|min:5|max:100',
-            'harga' => 'required|numeric',
+            'harga' => 'required|numeric|10000',
             'deskripsi_produk' => 'required|min:10|max:200',
             'rating' => 'required',
             'image' => 'required|image|file|max:1024',

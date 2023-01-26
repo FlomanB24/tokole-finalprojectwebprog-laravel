@@ -33,7 +33,6 @@ Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus');
 
 
-
 //ADMIN  DAHSBOARD
 Route::middleware('checklogin', 'checkrole')->group(function () {
 

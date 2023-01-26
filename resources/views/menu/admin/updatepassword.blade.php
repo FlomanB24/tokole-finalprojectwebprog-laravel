@@ -27,11 +27,11 @@
                 <h5 class="colorfont mb-3">Change Password</h5>
                 <div class="form-floating mb-3">
                     <input type="password" class="form-control @error('current_password') is-invalid @enderror""
-                        name="current_password" id="current_password" placeholder="Old Password">
+                        name="current_password" id="current_password" placeholder="Current Password">
                     @error('current_password')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
-                    <label for="oldpassword">Old Password</label>
+                    <label for="current_password">Old Password</label>
                 </div>
 
 
