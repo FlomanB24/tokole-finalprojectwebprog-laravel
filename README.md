@@ -1,6 +1,7 @@
 Readme Github
 
 Nama Project: Tokole
+
 Anggota Kelompok:
 - Bernadete Marchellin Agatha Tanarto - 2440032783
 - Gabriel Rolly Davinsi - 2440071582
@@ -21,3 +22,7 @@ Cara Installasi Project
 10. Lalu pada Terminal VSCode, ketikkan "php artisan migrate:fresh --seed" lalu jalankan.
 11. Lalu pada terminal yang sama ketikkan "php artisan serve" dan klik link yang diberikan.
 12. Website tokole siap digunakan.
+13. Untuk masuk ke dalam dashboard admin, gunakan Username: Admintokole | Password: Admintokole
+14. Oleh karena user sebagai admin hanya diperuntukan oleh user yang dipilih tokole maka tidak ada menu registrasi yang disertakan dalam tampilan UI nya untuk mencegah semua orang (bukan pilihan Tokole) dapat melakukan registrasi dan menjadi admin sehingga bisa mengakses dashboard admin. Tetapi utuk pihak Tokole yangmau melakukan registrasi dapat dilakukan secara manual dengan memasang route (/register) saat php artisan serve dijalankan dan web Tokole terbuka.
+
+Note: Tokole bukanlah toko ole-oleh (toko online) yang di dalamnya dapat dilakukan transaksi jual-beli online. Tokole sendiri adalah website yang dibangun untuk membantu mempromosikan dan memperkenalkan UMKM yang ada di DKI Jakarta agar siapa saja yang hendak mencari ole-oleh Jakarta dapat mencari terlebih dahulu referensi Toko UMKM, Produk dan tempat Toko UMKM dari Tokole. Bagi user yang ingin mendaftarkan toko dan produknya untuk dimasukan ke dalam Tokole dapat menuju menu Contact Us (icon: envelope) untuk mengirimkan pesan kepada admin. Menu Contact Us Tokole terintegrasi dengan Google Spreedsheet, sehingga semua pesan yang dikirim akan masuk ke Spreedsheet. 
